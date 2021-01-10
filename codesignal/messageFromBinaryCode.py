@@ -1,0 +1,17 @@
+def messageFromBinaryCode(code):
+    n = len(code)
+    result = ''
+    bits = ''
+    for i in range(n):
+        bits += code[i]
+        if (i + 1) % 8 == 0:
+            binary = int(bits, 2)
+            result += chr(binary)
+            bits = ''
+
+    return result
+
+
+code = '0100001101101000011000010110111001100111011001010010000001110100011010000110010100100000011101110110111101110010011011000110010000100000011000100111100100100000011000100110010101101001011011100110011100100000011110010110111101110101011100100111001101100101011011000110011000101110'
+result = messageFromBinaryCode(code)
+print(result)
