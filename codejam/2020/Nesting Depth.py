@@ -27,4 +27,4 @@ if __name__ == '__main__':
 
     for i in range(tests):
         digits = input()
-        result = sol.solve(i, digits)
+        sol.solve(i, digits)
