@@ -22,4 +22,4 @@ if __name__ == "__main__":
     tests = int(input())
     for i in range(tests):
         n, k = list(map(int, input().split()))
-        result = sol.solve(n, k)
+        sol.solve(n, k)
