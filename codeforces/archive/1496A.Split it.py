@@ -2,8 +2,8 @@ class Solution:
     def solve(self, n, k, string):
         if (n == 0) or (n / 2 == k):
             return "NO"
-        
-        if (k == 0):
+
+        if k == 0:
             return "YES"
 
         for i in range(k):
