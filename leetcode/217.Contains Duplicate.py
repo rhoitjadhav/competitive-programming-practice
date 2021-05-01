@@ -5,7 +5,6 @@ from typing import List
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         freq = set()
-        a = dict()
         for num in nums:
             if num in freq:
                 return True

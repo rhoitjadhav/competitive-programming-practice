@@ -41,7 +41,7 @@ d.next = e
 e.next = f
 
 
-output = s.test(a)
+output = s.removeElements(a, 6)
 print(output)
 # s.view(output)
 
