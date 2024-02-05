@@ -2,22 +2,22 @@
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        if len(s) <= 1:
-            return len(s)
+        n = len(s)
+        if n <= 1:
+            return n
         count = 0
         l = 0
         r = 1
-        for i in range(1, len(s)):
+        for i in range(1, n):
             temp = s[l:r]
             if s[i] in temp:
-                if count < abs(l - r):
-                    count = abs(l - r)
+                count = max(count, abs(l-r))
                 l += temp.find(s[r]) + 1
 
             r += 1
+            print(s[i], temp)
 
-        if count < abs(l - r):
-            count = abs(l - r)
+        count = max(count, abs(l-r))
 
         return count
 
