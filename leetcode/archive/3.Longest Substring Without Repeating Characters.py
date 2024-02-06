@@ -15,7 +15,6 @@ class Solution:
                 l += temp.find(s[r]) + 1
 
             r += 1
-            print(s[i], temp)
 
         count = max(count, abs(l-r))
 
